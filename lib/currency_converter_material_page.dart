@@ -40,7 +40,7 @@ class _CurrencyConverterMaterialPageState extends State<CurrencyConverterMateria
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              '₹ $result',
+              '₹ ${result!=0 ?  result.toStringAsFixed(3) : result.toStringAsFixed(0)}',
               style: const TextStyle(
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
